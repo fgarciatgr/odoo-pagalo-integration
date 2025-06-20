@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- 
+            Usando una función para crear el adquirente de forma programática.
+            Este es un método más robusto para evitar errores de instalación
+            relacionados con el análisis sintáctico o dependencias de campos en Odoo v18.
+        -->
+        <function model="payment.acquirer" name="_create_pagalo_v2_acquirer"/>
+    </data>
+</odoo>
